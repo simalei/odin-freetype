@@ -10,4 +10,5 @@ when ODIN_OS == .Windows && ODIN_ARCH == .amd64 {
 
 Int32  :: i32
 UInt32 :: u32
+UInt16 :: u16
 
