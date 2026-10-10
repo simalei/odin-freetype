@@ -1,0 +1,32 @@
+inputs = [
+	"headers"
+]
+
+package_name = "freetype"
+
+output_folder = "."
+
+remove_type_prefix = "FT_"
+remove_function_prefix = "FT_"
+remove_macro_prefix = "FT_"
+
+imports_file = "imports.odin.inc"
+
+clang_include_paths = [
+	"include"
+]
+
+remove = [
+	"FT_LOAD_TARGET_LIGHT",
+	"FT_LOAD_TARGET_NORMAL",
+	"FT_LOAD_TARGET_MONO",
+	"FT_LOAD_TARGET_LCD",
+	"FT_LOAD_TARGET_LCD_V",
+]
+
+clang_defines = {
+	"FT_BEGIN_HEADER" = ""
+	"FT_END_HEADER" = ""
+	"FT_IMAGE_TAG" = ""
+	"FT_Glyph_Format" = "int" // see line 765 in ftimage.h header
+}
