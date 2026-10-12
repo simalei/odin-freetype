@@ -8,6 +8,8 @@ when ODIN_OS == .Windows && ODIN_ARCH == .amd64 {
 	#panic("Your OS/arch configuration is not supported")
 }
 
+_ :: lib
+
 Int32  :: i32
 UInt32 :: u32
 UInt16 :: u16

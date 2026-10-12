@@ -39,6 +39,8 @@ when ODIN_OS == .Windows && ODIN_ARCH == .amd64 {
 	#panic("Your OS/arch configuration is not supported")
 }
 
+_ :: lib
+
 /**************************************************************************
 *
 * @type:
